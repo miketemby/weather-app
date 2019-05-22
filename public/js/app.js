@@ -9,7 +9,7 @@ weatherFrom.addEventListener('submit', (e) => {
     // get content of input from location field
     const searchString = encodeURI(searchInput.value)
     // construct url with query string
-    const url = `http://localhost:3000/weather?address=${searchString}`
+    const url = `/weather?address=${searchString}`
 
 
     messageOne.textContent = 'loading local weather forecast...'
