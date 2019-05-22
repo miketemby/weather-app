@@ -27,5 +27,4 @@ weatherFrom.addEventListener('submit', (e) => {
         })
     })
 
-
 })
