@@ -669,20 +669,15 @@
           el = document.getElementById(el);
           console.log(this.list)
         
-          for (element of this.list) {
-            console.log(element)
-            console.log(element.element)
+          for (var element of this.list) {
             if(element.element === el) {
-              element.splice(element.index, 1);
+              this.list.splice(element.index, 1);
               return;
             }
           }
 
           // update i value to be index not length
         // for(i = this.list.length; i--; )
-        //   console.log(this.list.length)
-        //   console.log(this.list[i])
-        //   console.log(this.list[0])
         //   if(this.list[i].element === el) {
         //     this.list.splice(i, 1);
         //     return;
