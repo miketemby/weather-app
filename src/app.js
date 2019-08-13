@@ -71,9 +71,12 @@ app.get('/weather', (req, res) => {
                             error : `Error: ${err}`
                         })
                     } else {
+
+                        // extend to include icon text
                         res.send({
                             location,
-                            forecast : weatherData,
+                            forecast: weatherData.forecast,
+                            icon : weatherData.icon,
                             address
                         })
                     }
